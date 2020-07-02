@@ -7,6 +7,27 @@
 		$('.loader_bg').fadeToggle();
   }, 2000);
   
+  //Iconate
+  $(function(){
+    $("#icon").click(function () {
+      if($(this).hasClass('fas fa-bars')){
+        var options = {
+          from:      'fas fa-bars',
+          to:        'fas fa-times',
+          animation: 'rubberBand'
+        };
+      }else{
+        var options = {
+          from:      'fas fa-times',
+          to:        'fas fa-bars',
+          animation: 'rubberBand'
+        };
+      }
+      iconate($(this)[0], options);
+      $('#nav').slideToggle();
+    });
+  });
+  
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
