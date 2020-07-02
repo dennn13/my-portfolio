@@ -465,7 +465,10 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+  border-right: 2px solid #6610f2;
+  border-bottom: 2px solid #6610f2;
+  border-style: inset;
 }
 
 .img-thumbnail {
