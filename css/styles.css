@@ -1926,6 +1926,14 @@ pre code {
   background-color: rgba(255, 255, 255, 0.075);
 }
 
+.indigo {
+  color: #6610f2;
+}
+
+.indigo:hover {
+  color: #6f42c1;
+}
+
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
@@ -6085,43 +6093,13 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #f4623a !important;
+  background-color: #6610f2 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #ee3e0d !important;
-}
-
-.bg-secondary {
-  background-color: #6c757d !important;
-}
-
-a.bg-secondary:hover, a.bg-secondary:focus,
-button.bg-secondary:hover,
-button.bg-secondary:focus {
-  background-color: #545b62 !important;
-}
-
-.bg-success {
-  background-color: #28a745 !important;
-}
-
-a.bg-success:hover, a.bg-success:focus,
-button.bg-success:hover,
-button.bg-success:focus {
-  background-color: #1e7e34 !important;
-}
-
-.bg-info {
-  background-color: #17a2b8 !important;
-}
-
-a.bg-info:hover, a.bg-info:focus,
-button.bg-info:hover,
-button.bg-info:focus {
-  background-color: #117a8b !important;
+  background-color: #6610f2 !important;
 }
 
 .bg-warning {
@@ -6162,6 +6140,10 @@ a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important;
+}
+
+.bg-indigo {
+  background-color: #6610f2 !important;
 }
 
 .bg-white {
@@ -9787,11 +9769,19 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #f4623a !important;
+  color: #6610f2 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #d6370c !important;
+  color: #6f42c1 !important;
+}
+
+.text-primary {
+  color:#6610f2 !important;
+}
+
+a.text-primary:hover, a.text-primary:focus {
+  color: #6f42c1 !important;
 }
 
 .text-secondary {
@@ -9995,15 +9985,15 @@ html {
 }
 
 hr.divider {
-  max-width: 3.25rem;
+  max-width: 20rem;
   border-width: 0.2rem;
-  border-color: #f4623a;
+  border-color: #6610f2;
 }
 
 hr.divider2 {
   max-width: 20rem;
   border-width: 0.2rem;
-  border-color: #f4623a;
+  border-color:#6610f2;
 }
 
 hr.light {
@@ -10049,10 +10039,10 @@ hr.light {
   padding: 0.75rem 0;
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: #6610f2;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
+  color: #6610f2 !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -10083,20 +10073,20 @@ hr.light {
     color: #212529;
   }
   #mainNav.navbar-scrolled .navbar-brand:hover {
-    color: #f4623a;
+    color: #6610f2;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
     color: #212529;
   }
   #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-    color: #f4623a;
+    color: #6610f2;
   }
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-2.jpg");
+  background: linear-gradient(to bottom, rgba(39, 37, 35, 0.8) 0%, rgba(39, 37, 35, 0.8) 100%), url("../assets/img/bg-2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10144,7 +10134,7 @@ header.masthead h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: #6610f2;
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -10196,7 +10186,7 @@ header.masthead h1 {
 
 .loader:before, .loader:after {
   content: '';
-  border: 1em solid #232323; 
+  border: 1em solid #6610f2; 
   border-radius: 50%;
   width: inherit;
   height: inherit;
@@ -10750,7 +10740,7 @@ xloading-bar
   bottom: 0;
   height: 3px;
   width: 0;
-  background: #0096a7;
+  background: #5433ff;
   z-index: 2;
   -webkit-transition: width 0.3s -0.1s;
   -moz-transition: width 0.3s -0.1s;
@@ -11424,4 +11414,15 @@ xpush
     -o-transform: translateX(100%);
     transform: translateX(100%);
   }
+}
+
+/* Navbar Projects */ 
+.navbar-b {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-b:hover {
+  color:  #6610f2;
+  text-decoration: none;
 }
